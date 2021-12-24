@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--xml注入集合类型-->
+    <bean id="student" class="com.spring5.collectionjava.Student">
+<!--       数组类型-->
+        <property name="courses">
+            <array>
+                <value>英语</value>
+                <value>语文</value>
+            </array>
+        </property>
+<!--        list类型-->
+        <property name="lists">
+            <list>
+                <value>llllll</value>
+            </list>
+        </property>
+<!--        map类型-->
+        <property name="maps">
+            <map>
+                <entry key="kkkk" value="vvvvvv"></entry>
+            </map>
+        </property>
+<!--        set类型-->
+        <property name="sets">
+            <set>
+                <value>ssssssss</value>
+            </set>
+        </property>
+    </bean>
+</beans>
